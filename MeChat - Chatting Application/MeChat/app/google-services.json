@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "387137406218",
+    "project_id": "me-chat-4257b",
+    "storage_bucket": "me-chat-4257b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387137406218:android:53a63eac4fb0f6c39566f3",
+        "android_client_info": {
+          "package_name": "com.example.mechat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdZiQQeKxEnyIqsbY602n6XoBTADdbRKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,38 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <!-- Sender's Message -->
+    <androidx.appcompat.widget.AppCompatTextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/msgsendertyp"
+        android:layout_width="0dp"
+        android:maxWidth="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/sender_shape"
+        android:paddingHorizontal="8dp"
+        android:text="Hello!"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_regular"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profilerggg"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/msgsendertyp"
+        app:layout_constraintTop_toTopOf="@+id/msgsendertyp"
+        app:layout_constraintBottom_toBottomOf="@+id/msgsendertyp"
+        android:src="@drawable/emoji"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

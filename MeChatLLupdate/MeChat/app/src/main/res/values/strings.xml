@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MeChat</string>
+    <string name="cloudinary_url">cloudinary://322447726646421:bJ9GVHsCMmarUYTbuTTmWxJDtMY@decujmqwp</string>
+    <string name="login_here">Login here</string>
+    <string name="welcome">Welcome back you\'ve \n been missed!</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="intro">Talk Freely, Connect Deeply</string>
+</resources>

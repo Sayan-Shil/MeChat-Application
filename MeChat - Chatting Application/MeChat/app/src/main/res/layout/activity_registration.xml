@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/loginhere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Create an account"
+        android:textColor="#1F41BB"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintVertical_bias=".09"
+        android:textSize="30sp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/loginmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/loginhere"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        android:text="Create account and connect with\nyour best friends"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:textAlignment="center"
+        android:textSize="14sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="30dp"
+        android:backgroundTint="#F1F4FF"
+        android:layout_marginVertical="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/loginmessage"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilerg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/add_photo"
+        android:elevation="2dp"
+        android:layout_marginVertical="5dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginmessage" />
+
+    <FrameLayout
+        android:id="@+id/email"
+        android:layout_width="357dp"
+        android:layout_height="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/profilerg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.03">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/rgUsername"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginmessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            android:scaleType="centerCrop"
+            android:hint="@string/name"
+            android:textColorHint="#626262"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:elevation="2dp"
+            android:background="@drawable/border_color"
+            android:paddingHorizontal="15dp"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/pass"
+        android:layout_width="357dp"
+        android:layout_height="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/rgEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/loginmessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            android:scaleType="centerCrop"
+            android:hint="Email"
+            android:textColorHint="#626262"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:elevation="2dp"
+            android:background="@drawable/border_color"
+            android:paddingHorizontal="15dp"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/repass"
+        android:layout_width="357dp"
+        android:layout_height="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/pass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/rgPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginmessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            android:scaleType="centerCrop"
+            android:textColor="@color/black"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#626262"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:elevation="2dp"
+            android:background="@drawable/border_color"
+            android:paddingHorizontal="15dp"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/repass2"
+        android:layout_width="357dp"
+        android:layout_height="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/repass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/rgRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginmessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            android:scaleType="centerCrop"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="#626262"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:elevation="2dp"
+            android:background="@drawable/border_color"
+            android:paddingHorizontal="15dp"/>
+
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/signinn"
+        android:layout_width="357dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/repass2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/repass2"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintVertical_bias=".25">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signupbutton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/curve_blue"
+            />
+
+    </FrameLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/signinn"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/signinn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Already have an account?"
+        app:layout_constraintVertical_bias=".45"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/signinn"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/signinn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Login Now"
+        app:layout_constraintVertical_bias=".65"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

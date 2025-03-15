@@ -1,0 +1,36 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <!-- Sender's Message -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/recivertextset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/reciver_shape"
+        android:fontFamily="@font/inter_regular"
+        android:maxWidth="250dp"
+        android:paddingHorizontal="8dp"
+        android:text="Hello!"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pro"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/emoji"
+        app:layout_constraintBottom_toBottomOf="@+id/recivertextset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".03"
+        app:layout_constraintStart_toEndOf="@+id/recivertextset"
+        app:layout_constraintTop_toTopOf="@+id/recivertextset" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Settings"
+        android:textColor="#1F41BB"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintVertical_bias=".09"
+        android:textSize="30sp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/profilepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cardd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Change Profile"
+        android:textColor="#1F41BB"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintVertical_bias=".055"
+        android:textSize="18sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/settingsmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/settings"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        android:text="Change your profile within a moment"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:textAlignment="center"
+        android:textSize="14sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardd"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="30dp"
+        android:backgroundTint="#F1F4FF"
+        android:layout_marginVertical="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/settingsmessage"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settingprofile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/border_color"
+        android:src="@drawable/add_photo"
+        android:elevation="2dp"
+        android:layout_marginVertical="5dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/settingsmessage" />
+
+    <FrameLayout
+        android:id="@+id/email"
+        android:layout_width="357dp"
+        android:layout_height="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/settingprofile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.03">
+
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/pass"
+        android:layout_width="357dp"
+        android:layout_height="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/settingname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/loginmessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            android:scaleType="centerCrop"
+            android:hint="Change Name"
+            android:textColorHint="#626262"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:elevation="2dp"
+            android:background="@drawable/border_color"
+            android:paddingHorizontal="15dp"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/repass"
+        android:layout_width="357dp"
+        android:layout_height="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/pass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/settingstatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginmessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            android:scaleType="centerCrop"
+            android:textColor="@color/black"
+            android:hint="Set Status"
+            android:textColorHint="#626262"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:elevation="2dp"
+            android:background="@drawable/border_color"
+            android:paddingHorizontal="15dp"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/repass2"
+        android:layout_width="357dp"
+        android:layout_height="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/repass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02">
+
+
+
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/signinn"
+        android:layout_width="357dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/repass2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/repass2"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintVertical_bias=".25">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/donebutt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Update Profile"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/curve_blue"
+            />
+
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
