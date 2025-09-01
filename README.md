@@ -1,4 +1,4 @@
-# MeChat - Real-Time Messaging App
+# MeChat - Real-Time Quick Messaging App
 
 ## 📌 Project Overview
 MeChat is an **Android real-time messaging application** developed during the **Beyond Curriculum Training in Java Android Development**, conducted by **Ardent Computech Pvt. Ltd.**  
