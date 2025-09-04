@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/loginhere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/login_here"
+        android:textColor="#1F41BB"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintVertical_bias=".11"
+        android:textSize="30sp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/loginmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/loginhere"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias=".02"
+
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <FrameLayout
+        android:id="@+id/email"
+        android:layout_width="357dp"
+        android:layout_height="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/loginmessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextLogEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginmessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            android:scaleType="centerCrop"
+            android:textColor="@color/black"
+            android:hint="@string/email"
+            android:textColorHint="#626262"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:elevation="2dp"
+            android:background="@drawable/border_color"
+            android:paddingHorizontal="15dp"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/pass"
+        android:layout_width="357dp"
+        android:layout_height="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.05">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextLogPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginmessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            android:scaleType="centerCrop"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="#626262"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:elevation="2dp"
+            android:background="@drawable/border_color"
+            android:paddingHorizontal="15dp"/>
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/pass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="forgot password?"
+        app:layout_constraintVertical_bias=".06"
+        android:textColor="#1F41BB"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <FrameLayout
+        android:id="@+id/signinn"
+        android:layout_width="357dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/pass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/pass"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintVertical_bias=".25">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Logbutton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/curve_blue"
+            />
+
+    </FrameLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/signinn"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/signinn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Don't have an account?"
+        app:layout_constraintVertical_bias=".45"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/signinn"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/signinn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Register Now"
+        app:layout_constraintVertical_bias=".55"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="15dp"
+        android:orientation="horizontal">
+
+        <!-- Logo Positioned on the Left -->
+
+        <!-- Spacer View (Pushes Logout to Right) -->
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="-9dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/av" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Logout Button Positioned on the Right -->
+        <ImageView
+            android:id="@+id/logoutimg"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/logout"
+            android:transitionName="loout_img" />
+    </LinearLayout>
+
+    <!-- RecyclerView for Users List -->
+
+    <!-- Bottom Action Buttons -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainUserRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_below="@id/toolBar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="104dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/camBut"
+            android:layout_width="47dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/camera" />
+
+        <ImageView
+            android:id="@+id/chatBut"
+            android:layout_width="47dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/chat" />
+
+        <ImageView
+            android:id="@+id/settingBut"
+            android:layout_width="47dp"
+            android:layout_height="38dp"
+            android:src="@drawable/sett" />
+    </LinearLayout>
+
+</RelativeLayout>
